@@ -1,0 +1,58 @@
+/* HoverTeX overlay */
+.hoverlatex-overlay {
+    position: absolute;
+    z-index: 99999;
+  
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+    padding: 10px 14px;
+    border-radius: 8px;
+  
+    background: #fff;
+    color: #000;
+  
+    font: 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+    user-select: none;
+    pointer-events: none; /* don't block clicks */
+    white-space: nowrap;
+  
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+  }
+  
+  .hoverlatex-overlay.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hoverlatex-overlay.copied {
+    background: #e6ffe6;
+    color: #006400;
+  }
+  
+  /* Optional: if you ever render an <img> inside the overlay */
+  .hoverlatex-overlay img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Hover targets show pointer cursor */
+  .katex.hoverlatex-hover,
+  mjx-container.hoverlatex-hover,
+  .MathJax_Display.hoverlatex-hover,
+  .MJXc-display.hoverlatex-hover,
+  .MathJax.hoverlatex-hover,
+  .mjx-chtml.hoverlatex-hover,
+  .MathJax_CHTML.hoverlatex-hover,
+  .MathJax_MathML.hoverlatex-hover,
+  img.mwe-math.hoverlatex-hover,
+  img.mwe-math-fallback-image-inline.hoverlatex-hover,
+  img.mwe-math-fallback-image-display.hoverlatex-hover {
+    cursor: pointer;
+  }

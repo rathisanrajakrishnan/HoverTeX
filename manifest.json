@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "HoverTeX – Copy LaTeX",
+    "version": "1.0.0",
+    "description": "Hover, click, and copy LaTeX from equations on Wikipedia, ChatGPT, Stack Exchange, and other math websites—no retyping needed.",
+    "icons": { "48": "logo.png" },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["overlay.css"],
+        "run_at": "document_idle"
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["mathjax-inject.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
