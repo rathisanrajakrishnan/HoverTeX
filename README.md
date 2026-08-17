@@ -2,7 +2,7 @@
 
 **HoverTeX** is a Chrome extension that lets you instantly copy LaTeX from rendered math equations on the web ✨. Instead of retyping formulas, simply hover over an equation and click to copy the original LaTeX source.
 
-[Click here for the Chrome Extension!](https://chrome.google.com/webstore/detail/encllgdlhiedjphlknkcpkhlpaolbgki)
+[Click here for the Chrome Extension!](https://chrome.google.com/webstore/detail/igchhionaieejllgljhdhaeecaccaidp)
 
 HoverTeX works seamlessly across popular math-heavy websites like **Wikipedia, ChatGPT, Stack Exchange**, and many educational or documentation pages that use KaTeX or MathJax.
 
